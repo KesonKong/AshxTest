@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <script src="Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-3.2.1.min.js" type="text/javascript"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -31,7 +31,7 @@
 
             //发送POST请求，数据也是json格式。但数值部分需要转换为字符串
             $.post("OrderConfirm.ashx", { data: JSON.stringify(order) }, function (result) {
-                alert(2);
+                alert(result);
                 var r = JSON.parse(result);
                 alert(r.Message);
                 alert(3);

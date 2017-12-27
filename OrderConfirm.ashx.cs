@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -20,9 +21,9 @@ namespace AshxTest
         public void ProcessRequest(HttpContext context)
         {
             //获取到Json串，并转为对象
-            var emp = context.Request["data"].ToJsonObject<Order>();
+            var order = JsonConvert.DeserializeObject<Order>(context.Request["data"]);
             var result = new ActionResult() { Code = 200, Message = "成功" };
-            context.Response.Write(result.ToJsonString());
+            context.Response.Write(JsonConvert.SerializeObject(result));
 
         }
 
