@@ -1,0 +1,5 @@
+F:\ASPNET_学习\HelloWorld\firstproject\AshxTest\bin\AshxTest.dll.config
+F:\ASPNET_学习\HelloWorld\firstproject\AshxTest\bin\AshxTest.dll
+F:\ASPNET_学习\HelloWorld\firstproject\AshxTest\bin\AshxTest.pdb
+F:\ASPNET_学习\HelloWorld\firstproject\AshxTest\obj\Debug\AshxTest.dll
+F:\ASPNET_学习\HelloWorld\firstproject\AshxTest\obj\Debug\AshxTest.pdb
